@@ -1,5 +1,6 @@
 # Signature to graph 
 
+## Code Structure
 This code gets an image of a handwritten signature and converts it into the underlying graph structure of the same signature, which can be used for later classification tasks. This code consists of four modules:
 
 - in the first one, we create a black-and-white image from the given input and turn it into a skeleton image of the signature
@@ -10,6 +11,8 @@ This code gets an image of a handwritten signature and converts it into the unde
 
 - and lastly, the interface and run module, which allows user to upload images and config the parameters of the program
 
+
+## Parameters
 There are some parameters which one can change and make different outputs. which inputs the following parameters:
 
 - ```output_name``` : The name of file which you want the result saves into. It is not required and has a default value of output.png.
@@ -39,3 +42,7 @@ Example : ```m_res=80```
 - ```l_res``` : The elucidian distance (in pixles) between two adjacent nodes of the result low resolution graph. Note that since we have some nodes for junctions, the distance between a junction node and a normal node can be lower ! It is not required and has a default value of 80.
 
 Example : ```l_res=120```
+
+
+## References 
+The original owner of this code is @DIVA-DIA and this code is a compact version of the same code which can be executed in colab. The link to their repository is here : ```https://github.com/DIVA-DIA/SkeletonGraph```
